@@ -11,3 +11,15 @@ console.log("Draft:", canApproveInvoice("Draft"));
 console.log("Submitted:", canApproveInvoice("Submitted"));
 console.log("Under Review:", canApproveInvoice("Under Review"));
 console.log("Approved:", canApproveInvoice("Approved"));
+const statusInput = document.querySelector("#invoiceStatus");
+const approvalMessage = document.querySelector("#approvalMessage");
+
+statusInput.addEventListener("change", function () {
+    const status = statusInput.value;
+
+    if (status === "") {
+        approvalMessage.textContent = "";
+    } else {
+        approvalMessage.textContent = canApproveInvoice(status);
+    }
+});
