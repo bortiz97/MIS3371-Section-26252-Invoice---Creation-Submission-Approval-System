@@ -13,5 +13,9 @@ The data tier stores and maintains the official invoice records. It preserves cl
 
 The data tier is responsible for maintaining the persistent official record of each invoice transaction.
 
+## Audit Requirement
+
+The system must maintain an audit history for each invoice, including the action performed, the user responsible, the date and time of the action, and the resulting invoice status.
+
 ## Tier Interaction
 The presentation tier sends user requests to the application logic tier. The application logic tier validates and processes those requests and communicates with the data tier to store or retrieve official invoice information.
