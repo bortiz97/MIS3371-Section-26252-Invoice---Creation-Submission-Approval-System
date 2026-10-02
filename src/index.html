@@ -70,7 +70,18 @@
 
         <fieldset>
           <legend>Invoice Information</legend>
+<label for="invoiceStatus">Invoice Status</label>
+<select id="invoiceStatus" name="invoiceStatus">
+  <option value="">Select a status</option>
+  <option value="Draft">Draft</option>
+  <option value="Submitted">Submitted</option>
+  <option value="Under Review">Under Review</option>
+  <option value="Approved">Approved</option>
+</select>
 
+<p id="approvalMessage"></p>
+
+<br>
           <label for="description">Description</label>
           <textarea
             id="description"
