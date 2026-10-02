@@ -16,6 +16,10 @@
 
 7. An approved invoice cannot be changed unless it is returned to an authorized user for correction.
 
+## Authoritative Application Rule
+
+The application tier must enforce that an invoice cannot be submitted unless it includes a client, invoice date, and at least one charge greater than $0.
+
 ## Invoice States
 
 - **Draft** – The invoice is being created and may still be edited.
